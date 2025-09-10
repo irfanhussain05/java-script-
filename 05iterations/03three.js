@@ -1,6 +1,6 @@
-//forof loop 
+//forof loop mostly used for arrays
 // ["","",""]
-// [{},{},{}]    // common senirio in loops 
+  // common senirio in loops 
 
 const arr = [ 1,2,3,4,5]
 for (const num of arr) { // eddar element means  any variable aur object bolatho kis paay loop lagna hai 
@@ -24,11 +24,21 @@ const greetings = "hwllo world!"
  map .set("IN","india")
  map .set("us","america")
  map .set("dubai","united states of arab")
+ map .set("IN","india")
+// console.log(map);
 
- console.log(map);
-
- const arr1="kaif"
- for (const topper of arr1) {
-  console.log(`${topper} is topper of svit`);
+for (const [key,value] of map) {       // maps are itterable 
+  console.log(key,value);                   
+// N india      //output
+// us america
+// dubai united states of arab
+  
+}
+ const myobject ={              // object is not itterable it doesnt work here 
+  game2:"spiderman",
+  game1:"wwwe"
+ }
+ for (const [key,value] of myobject) {
+  console.log(key, value);
   
  }
